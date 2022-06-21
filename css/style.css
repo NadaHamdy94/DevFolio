@@ -1,0 +1,456 @@
+body
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    overflow-y: hidden;
+}
+a:hover
+{
+    cursor: pointer;
+}
+p
+{
+    color: #4e4e4e;
+}
+:root
+{
+    --blue:#0078FF;
+}
+.w-85
+{
+    width: 85%;
+}
+.w-90
+{
+    width: 90%;
+}
+.dark-info-color
+{
+    background-color:var(--blue) ;
+}
+.fw-600
+{
+    font-weight: 600;
+}
+.fw-100
+{
+    font-weight: 100;
+}
+.fs-20px
+{
+    font-size: 20px;
+}
+.fs-18px
+{
+    font-size: 18px;
+}
+/* loading */
+#loading
+{
+    background-color: white;
+    z-index: 999;
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #0078FF;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #0078FF transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/* Home Section */
+header 
+{
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar 
+{
+    background-color: transparent;
+}
+.navbar a 
+{
+    color: white;
+    transition:text-decoration 1s ;
+}
+.navbar .navbar-brand:hover
+{
+    text-decoration: none;
+}
+/* .navbar #home-link
+{
+    text-decoration: solid underline 3px ;
+    text-underline-offset: 10px;
+    color: white;
+} */
+.navbar a:hover 
+{
+    text-decoration: solid underline 3px ;
+    text-underline-offset: 10px;
+    color: white;
+}
+#home .backtop-icon {
+    z-index: 99;
+    display: none;
+
+}
+.home .backtop-icon:hover
+{
+    color: #3492FB;
+}
+header h1
+{
+    font-size: 70px;
+}
+header h2::after
+{
+    content: ' |';
+    animation: typing 15s infinite;
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+}
+@media screen and (max-width:767px) {
+    header h1
+    {
+        font-size: 50px;
+    }
+    header h2::after
+    {
+        font-weight: 600;
+        font-size: 25px;
+    }
+}
+
+@keyframes typing {
+    1.15%{content: 'D |';}
+    2.30%{content: 'De |';}
+    3.45%{content: 'Des |';}
+    4.60%{content: 'Desi |';}
+    5.75%{content: 'Desig |';}
+    6.90%{content: 'Design |';}
+    8.05%{content: 'Designe |';}
+    9.2%{content: 'Designer |';}
+    10.35%{content: 'Designer |';}
+    11.5%{content: 'Designer |';}
+    12.65%{content: 'Designe |';}
+    13.8%{content: 'Design |';}
+    14.95%{content: 'Desig |';}
+    16.1%{content: 'Desi |';}
+    17.25%{content: 'Des |';}
+    18.4%{content: 'De |';}
+    19.55%{content: 'D |';}
+    20.7%{content: ' |';}
+    21.85%{content: 'D |';}
+    23%{content: 'De |';}
+    24.15%{content: 'Dev |';}
+    25.30%{content: 'Deve |';}
+    26.45%{content: 'Devel |';}
+    27.60%{content: 'Develo |';}
+    28.75%{content: 'Develop |';}
+    29.90%{content: 'Develope |';}
+    31.05%{content: 'Developer |';}
+    32.2%{content: 'Developer |';}
+    33.35%{content: 'Developer |';}
+    34.5%{content: 'Develope |';}
+    35.65%{content: 'Develop |';}
+    36.8%{content: 'Develo |';}
+    37.95%{content: 'Devel |';}
+    39.1%{content: 'Deve |';}
+    40.25%{content: 'Dev |';}
+    41.4%{content: 'De |';}
+    42.55%{content: 'D |';}
+    43.7%{content: ' |';}
+    44.85%{content: 'F |';}
+    46%{content: 'Fr |';}
+    47.15%{content: 'Fre |';}
+    48.3%{content: 'Free |';}
+    49.45%{content: 'Freel |';}
+    50.6%{content: 'Freela |';}
+    51.75%{content: 'Freelan |';}
+    52.9%{content: 'Freelanc |';}
+    54.05%{content: 'Freelance |';}
+    55.2%{content: 'Freelancer |';}
+    56.35%{content: 'Freelancer |';}
+    57.5%{content: 'Freelancer |';}
+    58.65%{content: 'Freelance |';}
+    59.8%{content: 'Freelanc |';}
+    60.95%{content: 'Freelan |';}
+    62.1%{content: 'Freela |';}
+    63.25%{content: 'Freel |';}
+    64.4%{content: 'Free |';}
+    65.55%{content: 'Fre |';}
+    66.7%{content: 'Fr |';}
+    67.85%{content: 'F |';}
+    69%{content: ' |';}
+    70.15%{content: 'P|';}
+    71.3%{content: 'Ph |';}
+    72.45%{content: 'Pho |';}
+    73.6%{content: 'Phot |';}
+    74.75%{content: 'Photo |';}
+    75.9%{content: 'Photog |';}
+    77.05%{content: 'Photogr |';}
+    78.2%{content: 'Photogra |';}
+    79.35%{content: 'Photograp |';}
+    80.5%{content: 'Photograph |';}
+    81.65%{content: 'Photographe |';}
+    82.8%{content: 'Photographer |';}
+    83.95%{content: 'Photographer |';}
+    85.1%{content: 'Photographer |';}
+    86.25%{content: 'Photographe |';}
+    87.4%{content: 'Photograph |';}
+    88.55%{content: 'Photograp |';}
+    89.7%{content: 'Photogra |';}
+    90.85%{content: 'Photogr |';}
+    92%{content: 'Photog |';}
+    93.15%{content: 'Photo |';}
+    94.3%{content: 'Photo |';}
+    95.45%{content: 'Phot |';}
+    96.6%{content: 'Pho |';}
+    97.75%{content: 'Ph |';}
+    98.9%{content: 'P |';}
+    100%{content: '|';}
+}
+/* About Section */
+.about p 
+{
+    font-weight: 300;
+}
+.about .bar
+{
+    height: 12px;
+   background-color: #CDE1F8;
+}
+.about h5
+{
+    position: relative;
+}
+.about h5::after
+{
+    content: '';
+    height: 3px;
+    width: 100px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+/* services */
+ h3
+{
+    font-size: 48px;
+}
+ .line
+{
+    width:40px ;
+    height: 5px;
+}
+.services .fa-stack 
+{
+    color: var(--blue);
+}
+
+.services .fa-circle{
+    transition:color 1s ;
+}
+.services .inner-icon {
+    
+    transition:color 1s ;
+}
+.service-content:hover .fa-circle 
+{
+    color: #CDE1F8;
+}
+.service-content:hover .inner-icon
+{
+    color: var(--blue);
+}
+.service-content
+{
+    border-radius: 16px;
+}
+/* facts */
+.facts
+{
+    background-image: url(../img/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.facts .layer
+{
+  background-color:rgba(13, 110, 253, 0.5);
+}
+.facts .fa-circle 
+{
+    color: #CDE1F8;
+}
+.facts .fa-circle-check
+{
+    color:rgba(60, 143, 238, 0.5);
+}
+.facts i 
+{
+    color: white;
+}
+.facts .icon
+{
+    width: 100px;
+    height: 100px;
+    border: solid 10px #CDE1F8;
+}
+/* portfolio */
+.portfolio img 
+{
+    transition: transform 1s ease-in-out;
+}
+.portfolio-content:hover img
+{
+    transform: scale(1.3);
+}
+.portfolio .fa-circle-plus
+{
+    color: var(--blue);
+}
+/* profile */
+.profile
+{
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.profile .layer
+{
+    background-color:rgba(13, 110, 253, 0.5);
+}
+.carousel-indicators [data-bs-target] 
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50% 50%;
+}
+.profile h3
+{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+.profile p
+{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+/* blog */
+.blog a:hover
+{
+    color: var(--blue) !important;
+}
+.blog .blog-footer img 
+{
+    width: 40px;
+}
+.fs-12px
+{
+    font-size: 12px;
+}
+/* contact */
+.contact
+{
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact .layer
+{
+    background-color:rgba(13, 110, 253, 0.5);
+}
+.contact input ,textarea
+{
+    border: 1px solid #ced4da;
+}
+.contact h5
+{
+    position: relative;
+}
+.contact h5::after
+{
+    content: '';
+    height: 3px;
+    width: 100px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+.contact button
+{
+    border: solid 5px var(--blue);
+    transition:all 1s  ;
+}
+.contact button:hover
+{
+    border: solid 5px #CDE1F8;
+    background-color: #3393FF;
+}
+.contact .fa 
+{
+    color: var(--blue);
+}
+.contact .icon
+{
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--blue);
+    transition:background-color 1s,border-color 1s ;
+}
+.contact .icon i 
+{
+    color:#183153;
+    transition:color 1s ;
+}
+.contact .icon:hover
+{
+    border-color: #CDE1F8;
+    background-color: var(--blue);
+}
+.contact .icon:hover i 
+{
+    color: white;
+}
+/* footer */
+footer
+{
+    background-color: #3D6CC3;
+}
